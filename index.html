@@ -17,7 +17,7 @@ br {
 .kont {
 
   height: 100%;
-  width: 30%;
+  width: 20vh;
   position: fixed;
   top: 0;
   left: 0;
@@ -62,14 +62,28 @@ br {
 .zaw {
  
  background-color:  #4a1128;
- top: 0;
+ top: 5vh;
  left: 20vh;
  position: fixed;
  width: 100vw;
- height: 100vh
+ height: 100vh;
 
 }
 
+.header {
+padding-top: 0px;
+top: 0;
+left: 0;
+position: fixed;
+width: 100vw;
+height: 5vh;
+background-color: #ffe500;
+color:  #ff6600;
+text-style: bold;
+text-align: center;
+font-size: 2vh;
+line-height: 1vh;
+}
 
 
 
@@ -80,6 +94,10 @@ br {
 </head>
 
 <body>
+
+<div class="header">
+<p>⋆ ✦•······················•˚｡⋆୨ Header ୧⋆ ˚｡⋆•······················•✦</p>
+</div>
 
 <div class="kont">
   <a href="https://www.google.com/" target="_blank">Google</a>
@@ -97,7 +115,7 @@ br {
   // If omitted, the default skin, included in the bundle, will be used.
   // Note: This URL must be served the with correct CORs headers.
   initialSkin: {
-    url: "https://github.com/grayishghost/webamp-rzeczy/raw/refs/heads/main/AMPWin_98.wsz",
+    url: "https://github.com/grayishghost/webamp-rzeczy/blob/main/AMPWin_98.wsz",
   },
 
   windowLayout: {
@@ -136,7 +154,7 @@ br {
               title: "Triple Baka",
             },
           
-            url: "https://github.com/grayishghost/webamp-rzeczy/raw/refs/heads/main/TripleBaka.mp3",
+            url: "https://github.com/grayishghost/webamp-rzeczy/blob/main/TripleBaka.mp3",
             duration: 236,
           },
           {
@@ -145,7 +163,7 @@ br {
               artist: "Hatsune Miku, Kasane Teto",
             },
            
-            url: "https://github.com/grayishghost/webamp-rzeczy/raw/refs/heads/main/Mesmerizer.mp3",
+            url: "https://github.com/grayishghost/webamp-rzeczy/blob/main/Mesmerizer.mp3",
             duration: 157,
           },
           {
@@ -156,7 +174,7 @@ br {
             // NOTE: Your audio file must be served from the same domain as your HTML
             // file, or served with permissive CORS HTTP headers:
             // https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
-            url: "https://github.com/grayishghost/webamp-rzeczy/raw/refs/heads/main/Fukuretta.mp3",
+            url: "https://github.com/grayishghost/webamp-rzeczy/blob/main/Fukuretta.mp3",
             duration: 248,
           },
         ],
