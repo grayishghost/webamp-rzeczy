@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html>
+
+<style>
+
+br {
+   display: block;
+   margin: 1px 0;
+}
+
+.body { 
+  font-family: OCR A Std, monospace;
+  font-weight: bold;
+}
+
+.kont {
+
+  height: 100%;
+  width: 30%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ff3396;
+}
+
+.kont a {
+ color: fcff33;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  color: white;
+  font-family: OCR A Std, monospace;
+  font-weight: bold;
+  font-size: 1.5vh;
+}
+
+.kont a:hover {
+  background-color: #ffb000;
+  color: black;
+  font-family: OCR A Std, monospace;
+  font-weight: bold;
+  font-size: 2vh;
+}
+
+.zaw p {
+
+  padding-left: 20px;
+  padding-bottom: 1px; 
+  font-size: 3vh;
+  color: white;
+}
+
+.zaw a {
+
+  padding-left: 20px;
+  padding-bottom: 1px;  
+  font-size: 3vh;
+  color: cyan;
+}
+
+.zaw {
+ 
+ background-color:  #4a1128;
+ top: 0;
+ left: 20vh;
+ position: fixed;
+ width: 100vw;
+ height: 100vh
+
+}
+
+
+
+
+</style>
+
+<head>
+
+</head>
+
+<body>
+
+<div class="kont">
+  <a href="https://www.google.com/" target="_blank">Google</a>
+  <a href="https://duckduckgo.com/" target="_blank">DuckDuckGo</a>
+  <a href="https://search.brave.com/" target="_blank">Search Brave</a>
+</div>
+
+    <div id="app" style="height: 100vh">
+      <!-- Webamp will attempt to center itself within this div -->
+    </div>
+    <script src="https://unpkg.com/webamp@1.4.2/built/webamp.bundle.min.js"></script>
+    <script>
+	const options = {
+  // Optional. An object representing the initial skin to use.
+  // If omitted, the default skin, included in the bundle, will be used.
+  // Note: This URL must be served the with correct CORs headers.
+  initialSkin: {
+    url: "https://grayishghost.github.io/webamp-rzeczy/AMPWin_98.wsz",
+  },
+
+  windowLayout: {
+    main: {
+      position: { top: 30, left: 20 },
+      shadeMode: true,
+      closed: false,
+    },
+    equalizer: {
+      position: { top: 0, left: 0 },
+      shadeMode: true,
+      closed: false,
+    },
+    playlist: {
+      position: { top: 0, left: 0 },
+      shadeMode: true,
+      // Number of additional sprites by which to expand the window.
+      size: { extraHeight: 1, extraHeight: 10 },
+      closed: false,
+    },
+  },
+
+};
+      const Webamp = window.Webamp;
+      const webamp = new Webamp({
+        // Optional. An array of objects representing skins.
+        // These will appear in the "Options" menu under "Skins".
+        // Note: These URLs must be served with the correct CORs headers.
+        //
+        // These will appear in the dropdown menu under "Skins".
+        availableSkins: [
+          {
+            url: "https://grayishghost.github.io/webamp-rzeczy/AMPWin_98.wsz",
+            name: "Windows 98",
+          },
+          {
+            url: "https://grayishghost.github.io/webamp-rzeczy/D-AMP.wsz",
+            name: "Matrix",
+          },
+        ],
+        
+      });
+
+      // Returns a promise indicating when it's done loading.
+      webamp.renderWhenReady(document.getElementById("app"));
+	  
+    </script>
+	
+	<div class="zaw">
+<p> Poniżej jest reimplementacja winampa wersji 2 na HTML. Wszystko możliwe dzięki temu projektowi na githubie: </p>
+<a href="https://github.com/captbaritone/webamp" target="blank">Webamp</a>
+</div>
+
+</body>
+
+</html>
