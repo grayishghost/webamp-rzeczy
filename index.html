@@ -97,7 +97,7 @@ br {
   // If omitted, the default skin, included in the bundle, will be used.
   // Note: This URL must be served the with correct CORs headers.
   initialSkin: {
-    url: "https://grayishghost.github.io/webamp-rzeczy/AMPWin_98.wsz",
+    url: "https://github.com/grayishghost/webamp-rzeczy/raw/refs/heads/main/AMPWin_98.wsz",
   },
 
   windowLayout: {
@@ -128,13 +128,46 @@ br {
         // Note: These URLs must be served with the correct CORs headers.
         //
         // These will appear in the dropdown menu under "Skins".
-        availableSkins: [
+        
+		initialTracks: [
           {
-            url: "https://grayishghost.github.io/webamp-rzeczy/AMPWin_98.wsz",
+            metaData: {
+              artist: "Kasane Teto, Neru Akita, Hatsune Miku",
+              title: "Triple Baka",
+            },
+          
+            url: "https://github.com/grayishghost/webamp-rzeczy/raw/refs/heads/main/TripleBaka.mp3",
+            duration: 236,
+          },
+          {
+            metaData: {
+              title: "Mesmerizer",
+              artist: "Hatsune Miku, Kasane Teto",
+            },
+           
+            url: "https://github.com/grayishghost/webamp-rzeczy/raw/refs/heads/main/Mesmerizer.mp3",
+            duration: 157,
+          },
+          {
+            metaData: {
+              title: "Fukuretta",
+              artist: "Kasane Teto",
+            },
+            // NOTE: Your audio file must be served from the same domain as your HTML
+            // file, or served with permissive CORS HTTP headers:
+            // https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+            url: "https://github.com/grayishghost/webamp-rzeczy/raw/refs/heads/main/Fukuretta.mp3",
+            duration: 248,
+          },
+        ],
+		
+		availableSkins: [
+          {
+            url: "https://github.com/grayishghost/webamp-rzeczy/raw/refs/heads/main/AMPWin_98.wsz",
             name: "Windows 98",
           },
           {
-            url: "https://grayishghost.github.io/webamp-rzeczy/D-AMP.wsz",
+            url: "https://github.com/grayishghost/webamp-rzeczy/raw/refs/heads/main/D-AMP.wsz",
             name: "Matrix",
           },
         ],
